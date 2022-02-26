@@ -51,7 +51,7 @@ export default function footer() {
                         rel="noreferrer"
                         href=""
                     >
-                        Contact Us
+                        Contact Us hey
                     </a>
                 </li>
             </ul>
