@@ -74,7 +74,12 @@ export default function Dashboard() {
                 <div className="container mx-auto max-w-full">
                     <div className="grid grid-cols-1 xl:grid-cols-1">
                         <div className="xl:col-start-1 xl:col-end-4 px-4 mb-14">
-                            <Hired />
+                            <Hired
+                                id="ID" name="Name" money="Daily Wage" city="City"
+                                id1="1" name1="Ramu" money1="Rs 150" city1="Sehore"
+                                id2="2" name2="Shamu" money2="Rs 150" city2="Sehore"
+                                id3="3" name3="gita" money3="Rs 150" city3="Sehore"
+                                id4="4" name4="sita" money4="Rs 150" city4="Sehore" />
                         </div>
                         {/* <div className="xl:col-start-4 xl:col-end-6 px-4 mb-14">
                             <TrafficCard />
