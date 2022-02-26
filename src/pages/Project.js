@@ -12,9 +12,7 @@ export default function Dashboard() {
                             icon="trending_up"
                             title="Notification"
                             amount="22"
-                            // percentage="3.48"
-                            // percentageIcon="arrow_upward"
-                            // percentageColor="green"
+
                             date="This Week"
                         />
                         <StatusCard
@@ -22,9 +20,7 @@ export default function Dashboard() {
                             icon="groups"
                             title="Hired Workers"
                             amount="12"
-                            // percentage="3.48"
-                            // percentageIcon="arrow_downward"
-                            // percentageColor="red"
+
                             date="Since last week"
                         />
                         <StatusCard
@@ -32,9 +28,7 @@ export default function Dashboard() {
                             icon="paid"
                             title="Transactions"
                             amount="Rs 9224"
-                            // percentage="1.10"
-                            // percentageIcon="arrow_downward"
-                            // percentageColor="orange"
+
                             date="Since yesterday"
                         />
                         <StatusCard
@@ -42,9 +36,7 @@ export default function Dashboard() {
                             icon="poll"
                             title="Word Done"
                             amount="49.65%"
-                            // percentage="12"
-                            // percentageIcon="arrow_upward"
-                            // percentageColor="green"
+
                             date="Since last month"
                         />
                     </div>
