@@ -6,6 +6,7 @@ import Image from '@material-tailwind/react/Image';
 import Dropdown from '@material-tailwind/react/Dropdown';
 import DropdownItem from '@material-tailwind/react/DropdownItem';
 import ProfilePicture from 'assets/img/profile.jpeg';
+import { Link } from 'react-router-dom';
 
 export default function AdminNavbar({ showSidebar, setShowSidebar }) {
     const location = useLocation().pathname;
@@ -68,13 +69,14 @@ export default function AdminNavbar({ showSidebar, setShowSidebar }) {
                                 }}
                             >
                                 <DropdownItem color="lightBlue">
-                                    Log Out
+                                    <Link to="/">Log Out</Link>
+
                                 </DropdownItem>
                                 <DropdownItem color="lightBlue">
-                                    Profile
+                                    <Link to="/settings">Profile</Link>
                                 </DropdownItem>
                                 <DropdownItem color="lightBlue">
-                                    Contact us!
+                                    <Link to="/">Contact Us!</Link>
                                 </DropdownItem>
                             </Dropdown>
                         </div>

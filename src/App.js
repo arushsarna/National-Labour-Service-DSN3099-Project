@@ -6,6 +6,7 @@ import Projects from 'pages/Project';
 import Maps from 'pages/Maps';
 import Footer from 'components/Footer';
 import Hire from 'pages/Hire';
+import Contact from 'pages/Contact'
 
 // Tailwind CSS Style Sheet
 import 'assets/styles/tailwind.css';
@@ -23,6 +24,8 @@ function App() {
                     <Route exact path="/settings" component={Settings} />
                     <Route exact path="/project" component={Projects} />
                     <Route exact path="/hire" component={Hire} />
+                    <Route exact path="/contact" component={Contact} />
+
                     <Redirect from="*" to="/" />
                 </Switch><Footer />
             </div>
