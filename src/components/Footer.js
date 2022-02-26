@@ -6,7 +6,7 @@ export default function footer() {
                 <a
                     href="https://www.creative-tim.com?ref=mtdk"
                     target="_blank"
-                    rel="noreferrer"
+                    rel="noreferrer" hey
                     className="text-light-blue-500 hover:text-light-blue-700"
                 >
                     Team XD
