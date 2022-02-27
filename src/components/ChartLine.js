@@ -18,6 +18,8 @@ export default function ChartLine() {
                     'June',
                     'July',
                 ],
+
+                
                 datasets: [
                     {
                         label: new Date().getFullYear(),
