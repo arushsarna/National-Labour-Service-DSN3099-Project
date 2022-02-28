@@ -71,12 +71,12 @@ export default function Sidebar() {
                             </li>
                             {/* <li className="rounded-lg mb-2 text-gray-700">
                                 <NavLink
-                                    to="/maps"
+                                    to="/contact"
                                     className="flex items-center gap-4 text-sm text-gray-700 font-light px-4 py-3 rounded-lg"
                                     activeClassName="bg-gradient-to-tr from-light-blue-500 to-light-blue-700 text-white shadow-md"
                                 >
                                     <Icon name="map" size="2xl" />
-                                    Maps
+                                    Contact Us!
                                 </NavLink>
                             </li> */}
                             <li className="px-4 rounded-lg mb-2 text-gray-700">
@@ -91,18 +91,17 @@ export default function Sidebar() {
                                     Login
                                 </a>
                             </li>
-                            <li className="px-4 rounded-lg mb-2 text-gray-700">
-                                <a
-                                    href="/contact"
-                                    target="_blank"
-                                    rel="noreferrer"
-                                    className="flex items-center gap-4 text-sm font-light py-3"
+                            <li className=" rounded-lg mb-2 text-gray-700">
+                                <NavLink
+                                    to="/contact"
+                                    className="flex items-center gap-4 text-sm text-gray-700 font-light px-4 py-3 rounded-lg"
+                                    activeClassName="bg-gradient-to-tr from-light-blue-500 to-light-blue-700 text-white shadow-md"
                                 >
                                     <Icon name="list_alt" size="2xl" />
                                     Contact Us!
-                                </a>
+                                </NavLink>
                             </li>
-                            <li className="px-4 rounded-lg mb-2 text-gray-700">
+                            {/* <li className="px-4 rounded-lg mb-2 text-gray-700">
                                 <a
                                     href="https://demos.creative-tim.com/material-tailwind-kit-react/#/landing"
                                     target="_blank"
@@ -123,7 +122,7 @@ export default function Sidebar() {
                                     <Icon name="account_circle" size="2xl" />
                                     Profile Page
                                 </a>
-                            </li>
+                            </li>*/}
                         </ul>
 
                         {/* <ul className="flex-col min-w-full flex list-none absolute bottom-0">

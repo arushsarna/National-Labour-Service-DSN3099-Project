@@ -4,9 +4,9 @@ export default function footer() {
             <p className="text-gray-700 mb-6 lg:mb-0">
                 Copyright &copy; {new Date().getFullYear()}{' '}
                 <a
-                    href="https://www.creative-tim.com?ref=mtdk"
+                    href=""
                     target="_blank"
-                    rel="noreferrer" 
+                    rel="noreferrer"
                     className="text-light-blue-500 hover:text-light-blue-700"
                 >
                     Team XD
@@ -51,7 +51,7 @@ export default function footer() {
                         rel="noreferrer"
                         href=""
                     >
-                        Contact Us 
+                        Contact Us
                     </a>
                 </li>
             </ul>

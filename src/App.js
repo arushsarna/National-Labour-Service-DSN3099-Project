@@ -6,15 +6,14 @@ import Projects from 'pages/Project';
 import Maps from 'pages/Maps';
 import Footer from 'components/Footer';
 import Hire from 'pages/Hire';
-import Contact from 'pages/Contact'
+import Contact from 'pages/Contact';
 
-// Tailwind CSS Style Sheet
 import 'assets/styles/tailwind.css';
 import MyApp from 'Login';
 
 function App() {
     return (
-        <>
+        <div>
 
             <Route exact path="/login" component={MyApp} />
             <Sidebar />
@@ -29,7 +28,8 @@ function App() {
                     <Redirect from="*" to="/" />
                 </Switch><Footer />
             </div>
-        </>
+        </div>
+
     )
 }
 

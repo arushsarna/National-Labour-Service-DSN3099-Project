@@ -3,10 +3,10 @@ import CardHeader from '@material-tailwind/react/CardHeader';
 import CardBody from '@material-tailwind/react/CardBody';
 import Image from '@material-tailwind/react/Image';
 
-import Team1 from 'assets/img/team-1-800x800.jpg';
-import Team2 from 'assets/img/team-2-800x800.jpg';
-import Team3 from 'assets/img/team-3-800x800.jpg';
-import Team4 from 'assets/img/team-4-470x470.png';
+import Team1 from 'assets/img/c.jpeg';
+import Team2 from 'assets/img/c1.jpeg';
+import Team3 from 'assets/img/c2.jpeg';
+import Team4 from 'assets/img/c3.jpeg';
 
 export default function CardTable(props) {
     return (
@@ -50,34 +50,15 @@ export default function CardTable(props) {
                                 </th>
                                 <th className="border-b border-gray-200 align-middle font-light text-sm whitespace-nowrap px-2 py-4 text-left">
                                     <div className="flex">
-                                        <div className="w-10 h-10 rounded-full border-2 border-white">
+                                        <div className="w-20 h-10 border-2 border-white -ml-2 mb-4 ">
                                             <Image
                                                 src={Team1}
                                                 rounded
                                                 alt="..."
+
                                             />
                                         </div>
-                                        <div className="w-10 h-10 rounded-full border-2 border-white -ml-4">
-                                            <Image
-                                                src={Team2}
-                                                rounded
-                                                alt="..."
-                                            />
-                                        </div>
-                                        <div className="w-10 h-10 rounded-full border-2 border-white -ml-4">
-                                            <Image
-                                                src={Team3}
-                                                rounded
-                                                alt="..."
-                                            />
-                                        </div>
-                                        <div className="w-10 h-10 rounded-full border-2 border-white -ml-4">
-                                            <Image
-                                                src={Team4}
-                                                rounded
-                                                alt="..."
-                                            />
-                                        </div>
+
                                     </div>
                                 </th>
                                 <th className="border-b border-gray-200 align-middle font-light text-sm whitespace-nowrap px-2 py-4 text-left">
@@ -97,34 +78,16 @@ export default function CardTable(props) {
                                 </th>
                                 <th className="border-b border-gray-200 align-middle font-light text-sm whitespace-nowrap px-2 py-4 text-left">
                                     <div className="flex">
-                                        <div className="w-10 h-10 rounded-full border-2 border-white">
-                                            <Image
-                                                src={Team1}
-                                                rounded
-                                                alt="..."
-                                            />
-                                        </div>
-                                        <div className="w-10 h-10 rounded-full border-2 border-white -ml-4">
+
+                                        <div className="w-20 h-10 border-2 border-white -ml-2 mb-4 ">
                                             <Image
                                                 src={Team2}
                                                 rounded
                                                 alt="..."
                                             />
                                         </div>
-                                        <div className="w-10 h-10 rounded-full border-2 border-white -ml-4">
-                                            <Image
-                                                src={Team3}
-                                                rounded
-                                                alt="..."
-                                            />
-                                        </div>
-                                        <div className="w-10 h-10 rounded-full border-2 border-white -ml-4">
-                                            <Image
-                                                src={Team4}
-                                                rounded
-                                                alt="..."
-                                            />
-                                        </div>
+
+
                                     </div>
                                 </th>
                                 <th className="border-b border-gray-200 align-middle font-light text-sm whitespace-nowrap px-2 py-4 text-left">
@@ -144,34 +107,17 @@ export default function CardTable(props) {
                                 </th>
                                 <th className="border-b border-gray-200 align-middle font-light text-sm whitespace-nowrap px-2 py-4 text-left">
                                     <div className="flex">
-                                        <div className="w-10 h-10 rounded-full border-2 border-white">
-                                            <Image
-                                                src={Team1}
-                                                rounded
-                                                alt="..."
-                                            />
-                                        </div>
-                                        <div className="w-10 h-10 rounded-full border-2 border-white -ml-4">
-                                            <Image
-                                                src={Team2}
-                                                rounded
-                                                alt="..."
-                                            />
-                                        </div>
-                                        <div className="w-10 h-10 rounded-full border-2 border-white -ml-4">
+
+
+                                        <div className="w-20 h-10 border-2 border-white -ml-2 mb-4 ">
                                             <Image
                                                 src={Team3}
                                                 rounded
                                                 alt="..."
                                             />
                                         </div>
-                                        <div className="w-10 h-10 rounded-full border-2 border-white -ml-4">
-                                            <Image
-                                                src={Team4}
-                                                rounded
-                                                alt="..."
-                                            />
-                                        </div>
+
+
                                     </div>
                                 </th>
                                 <th className="border-b border-gray-200 align-middle font-light text-sm whitespace-nowrap px-2 py-4 text-left">
@@ -191,28 +137,9 @@ export default function CardTable(props) {
                                 </th>
                                 <th className="border-b border-gray-200 align-middle font-light text-sm whitespace-nowrap px-2 py-4 text-left">
                                     <div className="flex">
-                                        <div className="w-10 h-10 rounded-full border-2 border-white">
-                                            <Image
-                                                src={Team1}
-                                                rounded
-                                                alt="..."
-                                            />
-                                        </div>
-                                        <div className="w-10 h-10 rounded-full border-2 border-white -ml-4">
-                                            <Image
-                                                src={Team2}
-                                                rounded
-                                                alt="..."
-                                            />
-                                        </div>
-                                        <div className="w-10 h-10 rounded-full border-2 border-white -ml-4">
-                                            <Image
-                                                src={Team3}
-                                                rounded
-                                                alt="..."
-                                            />
-                                        </div>
-                                        <div className="w-10 h-10 rounded-full border-2 border-white -ml-4">
+
+
+                                        <div className="w-20 h-10 border-2 border-white -ml-2 mb-4 ">
                                             <Image
                                                 src={Team4}
                                                 rounded
