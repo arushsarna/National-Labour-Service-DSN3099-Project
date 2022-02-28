@@ -2,9 +2,12 @@ import Card from '@material-tailwind/react/Card';
 import CardHeader from '@material-tailwind/react/CardHeader';
 import CardBody from '@material-tailwind/react/CardBody';
 
-
 export default function Hired(props) {
-    return (
+
+
+    return (<div>
+
+
         <Card>
             <CardHeader color="blue" contentPosition="none">
                 <div className="w-full flex items-center justify-between">
@@ -14,7 +17,7 @@ export default function Hired(props) {
                         buttonType="link"
                         size="lg"
                         style={{ padding: 0 }}
-                    >
+                        >
                         See More
                     </Button> */}
                 </div>
@@ -53,7 +56,7 @@ export default function Hired(props) {
                                     {props.name1}
                                 </td>
                                 <td className="border-b border-gray-200 align-middle font-light text-sm whitespace-nowrap px-2 py-4 text-left">
-                                    {props.money1}
+                                    Rs   {props.money1}
                                 </td>
                                 <td className="border-b border-gray-200 align-middle font-light text-sm whitespace-nowrap px-2 py-4 text-left">
                                     {props.city1}
@@ -130,5 +133,6 @@ export default function Hired(props) {
                 </div>
             </CardBody>
         </Card>
+    </div>
     );
 }

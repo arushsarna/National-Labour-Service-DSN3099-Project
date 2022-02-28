@@ -1,19 +1,20 @@
 import StatusCard from 'components/StatusCard';
 
 import Hired from 'components/Hired';
-import { db } from './firebase';
+import { db } from '../firebase';
 import { useEffect, useState } from 'react';
 
 
 
 export default function Dashboard() {
+
     const [posts, setPosts] = useState([]);
+
     useEffect(() => {
-
-
-        db.collection('data').onSnapshot(snapshot => {
+        db.collection('data').onSnapshot(snapshot => (
             setPosts(snapshot.docs.map(doc => doc.data()))
-        })
+        ))
+
     }, [])
 
     return (
@@ -65,12 +66,20 @@ export default function Dashboard() {
                 <div className="container mx-auto max-w-full">
                     <div className="grid grid-cols-1 xl:grid-cols-1">
                         <div className="xl:col-start-1 xl:col-end-4 px-4 mb-14">
-                            <Hired title="Hired Workers"
-                                id="ID" name="Name" money="Daily Wage" city="City" status="Status" phoneno="Phone No."
-                                id1="1" name1="Ramu" money1="Rs 150" city1="Sehore" status1="Hired" phoneno1="895947523"
-                                id2="2" name2="Shamu" money2="Rs 150" city2="Sehore" status2="Hired" phoneno2="895947523"
-                                id3="3" name3="gita" money3="Rs 150" city3="Sehore" status3="Hired" phoneno3="895947523"
-                                id4="4" name4="sita" money4="Rs 150" city4="Sehore" status4="Hired" phoneno4="895947523" />
+                            {
+                                posts.map(({ id1, name1, status1, dailywage1, city1, phoneno1, status2 }) => (
+
+                                    <Hired title="Hired Workers"
+
+                                        id="ID" name="Name" money="Daily Wage" city="City" status="Status" phoneno="Phone No."
+                                        id1={id1} name1={name1} money1={dailywage1} city1={city1} status1={status1} phoneno1={phoneno1}
+                                        id2="2" name2="Shamu" money2="Rs 150" city2="Sehore" status2={status2} phoneno2="895947523"
+                                        id3="3" name3="gita" money3="Rs 150" city3="Sehore" status3="Hired" phoneno3="895947523"
+                                        id4="4" name4="sita" money4="Rs 150" city4="Sehore" status4="Hired" phoneno4="895947523"
+                                    />
+                                ))
+                            }
+
                         </div>
 
                     </div>
@@ -79,3 +88,4 @@ export default function Dashboard() {
         </>
     );
 }
+

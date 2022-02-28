@@ -7,8 +7,18 @@ import Team1 from 'assets/img/c.jpeg';
 import Team2 from 'assets/img/c1.jpeg';
 import Team3 from 'assets/img/c2.jpeg';
 import Team4 from 'assets/img/c3.jpeg';
+import { db } from '../firebase.js';
+import { useEffect, useState } from 'react';
+
 
 export default function CardTable(props) {
+
+    const [posts, setPosts] = useState([]);
+    useEffect(() => {
+        db.collection('data').onSnapshot(snapshot => (
+            setPosts(snapshot.docs.map(doc => doc.data()))
+        ))
+    }, [])
     return (
         <Card>
             <CardHeader color="purple" contentPosition="left">
