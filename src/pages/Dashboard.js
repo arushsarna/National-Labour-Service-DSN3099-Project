@@ -1,10 +1,21 @@
 import StatusCard from 'components/StatusCard';
 
 import Hired from 'components/Hired';
+import { db } from './firebase';
+import { useEffect, useState } from 'react';
 
 
 
 export default function Dashboard() {
+    const [posts, setPosts] = useState([]);
+    useEffect(() => {
+
+
+        db.collection('data').onSnapshot(snapshot => {
+            setPosts(snapshot.docs.map(doc => doc.data()))
+        })
+    }, [])
+
     return (
         <>
             <div className="bg-light-blue-500 px-2 md:px-4 h-20" />
