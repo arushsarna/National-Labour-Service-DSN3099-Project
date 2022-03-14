@@ -73,9 +73,9 @@ export default function Dashboard() {
 
                                         id="ID" name="Name" money="Daily Wage" city="City" status="Status" phoneno="Phone No."
                                         id1={id1} name1={name1} money1={dailywage1} city1={city1} status1={status1} phoneno1={phoneno1}
-                                        id2="2" name2="Shamu" money2="Rs 150" city2="Sehore" status2={status2} phoneno2="895947523"
-                                        id3="3" name3="gita" money3="Rs 150" city3="Sehore" status3="Hired" phoneno3="895947523"
-                                        id4="4" name4="sita" money4="Rs 150" city4="Sehore" status4="Hired" phoneno4="895947523"
+                                        id2="2" name2="Shamu" money2="Rs 150" city2="Sehore" status2={status2} phoneno2="8959475231"
+                                        id3="3" name3="gita" money3="Rs 150" city3="Sehore" status3="Hired" phoneno3="8959475232"
+                                        id4="4" name4="sita" money4="Rs 150" city4="Sehore" status4="Hired" phoneno4="8959475233"
                                     />
                                 ))
                             }

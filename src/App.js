@@ -3,10 +3,11 @@ import Sidebar from 'components/Sidebar';
 import Dashboard from 'pages/Dashboard';
 import Settings from 'pages/Settings';
 import Projects from 'pages/Project';
-import Maps from 'pages/Maps';
+
 import Footer from 'components/Footer';
 import Hire from 'pages/Hire';
 import Contact from 'pages/Contact';
+import Feedback from 'pages/Feedback';
 
 import 'assets/styles/tailwind.css';
 import MyApp from 'Login';
@@ -24,8 +25,9 @@ function App() {
                     <Route exact path="/settings" component={Settings} />
                     <Route exact path="/project" component={Projects} />
                     <Route exact path="/hire" component={Hire} />
-                    <Route exact path="/contact" component={Contact} />
 
+                    <Route exact path="/contact" component={Contact} />
+                    <Route exact path="/feedback" component={Feedback} />
                     <Redirect from="*" to="/" />
                 </Switch><Footer />
             </div>
